@@ -13,14 +13,13 @@ permissions:
     mode: 644
     type:
       - file
-	
 hooks:
   BeforeInstall:
     - location: scripts/webserver-stop.sh
-	- location: scripts/delete-old-index.sh
+    - location: scripts/delete-old-index.sh
   AfterInstall:
     - location: scripts/sleep.sh
-	- location: scripts/webserver-start.sh	
+    - location: scripts/webserver-start.sh	
 #version: 0.0
 #os: linux
 #
